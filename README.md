@@ -8,7 +8,9 @@ Modelos na Prática:
 * 4 - KNN (https://www.linkedin.com/pulse/modelos-de-machine-learning-knn-fernando-anselmo/)
 * 5 - Naïve Bayes (https://www.linkedin.com/pulse/modelos-de-machine-learning-na%25C3%25AFve-bayes-fernando-anselmo/)
 * 6 - DBScan (https://www.linkedin.com/pulse/modelos-de-machine-learning-dbscan-fernando-anselmo/)
+* 7 - Apriori (https://www.linkedin.com/pulse/modelos-de-machine-learning-apriori-fernando-anselmo)
 
 Conceitos Expostos na Prática:
 
 * 1 - Identificar Outliers por BoxPlots (https://www.linkedin.com/pulse/boxplots-e-outliers-fernando-anselmo/)
+* 2 - Matriz de Confusão (https://www.linkedin.com/pulse/conceito-na-pr%C3%A1tica-matriz-de-confus%C3%A3o-fernando-anselmo/)
