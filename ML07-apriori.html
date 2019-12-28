@@ -16333,7 +16333,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Apriori">Apriori<a class="anchor-link" href="#Apriori">&#182;</a></h1><p>É um algoritimo com base no "Aprendizado por Regras de Associação" com a função de identificar associações entre diferentes variáveis em um banco de dados. Um dos mais populares exemplos desse tipo de aprendizado é a análise da cesta de supemercado. O problema analisa a associação entre vários itens com maior probabilidade de serem comprados juntos por um cliente.</p>
+<h1 id="Modelo-&quot;Apriori&quot;">Modelo "Apriori"<a class="anchor-link" href="#Modelo-&quot;Apriori&quot;">&#182;</a></h1><p>É um algoritimo com base no "Aprendizado por Regras de Associação" com a função de identificar associações entre diferentes variáveis em um banco de dados. Um dos mais populares exemplos desse tipo de aprendizado é a análise da cesta de supemercado. O problema analisa a associação entre vários itens com maior probabilidade de serem comprados juntos por um cliente.</p>
 
 </div>
 </div>
@@ -16356,10 +16356,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import numpy as np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">apyori</span> <span class="kn">import</span> <span class="n">apriori</span>
+<span class="kn">from</span> <span class="nn">apyori</span> <span class="k">import</span> <span class="n">apriori</span>
 </pre></div>
 
     </div>
@@ -16369,7 +16368,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">store_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;bases/store_data.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -16386,7 +16385,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -16568,7 +16567,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">records</span> <span class="o">=</span> <span class="p">[]</span>
@@ -16583,11 +16582,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">association_rules</span> <span class="o">=</span> <span class="n">apriori</span><span class="p">(</span><span class="n">records</span><span class="p">,</span> <span class="n">min_support</span><span class="o">=</span><span class="mf">0.0045</span><span class="p">,</span> <span class="n">min_confidence</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">min_lift</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">association_results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">association_rules</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">regras</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">apriori</span><span class="p">(</span><span class="n">records</span><span class="p">,</span> <span class="n">min_support</span><span class="o">=</span><span class="mf">0.0045</span><span class="p">,</span> <span class="n">min_confidence</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">min_lift</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -16597,11 +16595,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">association_results</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">association_results</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">regras</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">regras</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -16619,7 +16617,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>48
-RelationRecord(items=frozenset({&#39;light cream&#39;, &#39;chicken&#39;}), support=0.004532728969470737, ordered_statistics=[OrderedStatistic(items_base=frozenset({&#39;light cream&#39;}), items_add=frozenset({&#39;chicken&#39;}), confidence=0.29059829059829057, lift=4.84395061728395)])
+RelationRecord(items=frozenset({&#39;chicken&#39;, &#39;light cream&#39;}), support=0.004532728969470737, ordered_statistics=[OrderedStatistic(items_base=frozenset({&#39;light cream&#39;}), items_add=frozenset({&#39;chicken&#39;}), confidence=0.29059829059829057, lift=4.84395061728395)])
 </pre>
 </div>
 </div>
@@ -16642,13 +16640,12 @@ RelationRecord(items=frozenset({&#39;light cream&#39;, &#39;chicken&#39;}), supp
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mostrar</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">association_results</span><span class="p">:</span>
-    <span class="n">pair</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
-    <span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">pair</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">regras</span><span class="p">:</span>
+    <span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Regra: &quot;</span> <span class="o">+</span> <span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; -&gt; &quot;</span> <span class="o">+</span> <span class="n">items</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suporte: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Confiança: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]))</span>
@@ -16673,7 +16670,7 @@ RelationRecord(items=frozenset({&#39;light cream&#39;, &#39;chicken&#39;}), supp
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Regra: light cream -&gt; chicken
+<pre>Regra: chicken -&gt; light cream
 Suporte: 0.004532728969470737
 Confiança: 0.29059829059829057
 Lift: 4.84395061728395
@@ -16694,24 +16691,11 @@ Lift: 3.790832696715049
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A primeira regra é entre o "Creme Light" e o "Frango". O valor de suporte é 0,0045 (este número é calculado dividindo o número de transações que contêm o primeiro produto dividido pelo número total de transações). A confiança de 0,2905, mostra que todas as transações que contêm "Creme Light", 29,05% das transações também contêm "Frango". O Lift nos diz que o frango tem 4,84 vezes mais chances de ser comprado pelos clientes que compram "Creme Light", em comparação com a probabilidade padrão de venda de frango.</p>
-<p>A segunda regra é entre o "Molho de Creme de Cogumelos" e o "Escalope". O suporte é de 0,0057. A confiança é 0,3006, o que significa que das transações que contêm o "Molho de Creme de Cogumelos" 30,06% dessas provavelmente também conterão escalope. Finalmente, o Lift mostra que o escalope tem 3,79 mais chances de ser comprado pelos clientes que compram o "Molho de Creme de Cogumelos", em comparação com a venda padrão.</p>
+<p>Entre o "Frango" e o "Creme Light". O valor de suporte é 0,0045 (este número é calculado dividindo o número de transações que contêm o primeiro produto dividido pelo número total de transações). A confiança de 0,2905 significa que de todas as transações que contêm "Creme Light", 29,05% também contêm "Frango". O Lift mostra que o "Creme Light" tem 4,84 vezes mais chances de ser comprado pelos clientes que compram "Frango", em comparação com a probabilidade de venda do "Creme Light".</p>
+<p>Entre o "Molho de Creme de Cogumelos" e o "Escalope". O suporte é de 0,0057. A confiança de 0,3006 significa que de todas as transações que contêm o "Molho de Creme de Cogumelos" 30,06% também contêm "Escalope". O Lift mostra que o "Escalope" tem 3,79 mais chances de ser comprado pelos clientes que compram o "Molho de Creme de Cogumelos", em comparação com a probabilidade de venda do "Escalope".</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
