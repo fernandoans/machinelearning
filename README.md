@@ -9,6 +9,8 @@ Modelos na Prática:
 * 5 - Naïve Bayes (https://www.linkedin.com/pulse/modelos-de-machine-learning-na%25C3%25AFve-bayes-fernando-anselmo/)
 * 6 - DBScan (https://www.linkedin.com/pulse/modelos-de-machine-learning-dbscan-fernando-anselmo/)
 * 7 - Apriori (https://www.linkedin.com/pulse/modelos-de-machine-learning-apriori-fernando-anselmo)
+* 8 - SVM (https://www.linkedin.com/pulse/modelos-de-machine-learning-svm-fernando-anselmo)
+* 9 - Regressão Logística (https://www.linkedin.com/pulse/modelos-de-machine-learning-regress%C3%A3o-log%C3%ADstica-fernando-anselmo/)
 
 Conceitos Expostos na Prática:
 
