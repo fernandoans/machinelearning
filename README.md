@@ -12,6 +12,7 @@ Modelos na Prática:
 * 8 - SVM (https://www.linkedin.com/pulse/modelos-de-machine-learning-svm-fernando-anselmo)
 * 9 - Regressão Logística (https://www.linkedin.com/pulse/modelos-de-machine-learning-regress%C3%A3o-log%C3%ADstica-fernando-anselmo/)
 * 10 - Floresta Randômica (https://www.linkedin.com/pulse/modelos-de-machine-learning-floresta-aleat%25C3%25B3ria-fernando-anselmo)
+* 11 - Regressão Linear 2 (https://www.linkedin.com/pulse/modelos-de-machine-learning-regress%25C3%25A3o-linear-2-fernando-anselmo)
 
 Conceitos Expostos na Prática:
 
