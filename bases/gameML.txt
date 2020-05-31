@@ -1,0 +1,39 @@
+Daenerys Targaryen 27 70000
+Jon Snow 29 90000
+Gregor Ciegane 29 61000
+Arya Stark 28 60000
+Tyrion Lannister 42 130000
+Cercei Lannister 39 125000
+Sansa Stark 41 130000
+Khal Drogo 38 122000
+Eddard Stark 46 156000
+Joffrey Baratheon 35 50000
+Petyr Baelish 37 137000
+Sandor Clegane 26 45000
+Melisandre 27 48000
+Theon Greyjoy 28 51000
+Ramsay Snow 29 49500
+Jaime Lannister 32 53000
+Brienne de Tarth 40 65000
+Bran Stark 41 63000
+Margaery Tyrell 43 64000
+Oberyn Martell 39 100000
+Varys 41 120000
+Shae 39 58000
+Ygritte 28 35000
+Bronn 34 78000
+Jorah Mormont 34 40000
+Hodor 26 48000
+Missandei 27 44000
+Tormund Glantsbane 36 136000
+Gilly 27 34000
+Daario Najaris 30 57000
+Gendry 38 120000
+Stannis Baratheon 32 35000
+Robb Stark 45 202000
+Tommen Baratheon 23 30000
+Tywin Lanninster 40 213000
+Grey Worm 32 34000
+Osha 34 36000
+Catelyn Stark 32 85000
+Samwell Tarly 28 35000
