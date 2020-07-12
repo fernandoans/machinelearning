@@ -16349,6 +16349,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Dúvida sobre o BoxPlot, consultar: <a href="http://www.portalaction.com.br/estatistica-basica/31-boxplot">http://www.portalaction.com.br/estatistica-basica/31-boxplot</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Detectando-Outliers">Detectando Outliers<a class="anchor-link" href="#Detectando-Outliers">&#182;</a></h1>
 </div>
 </div>
@@ -16397,82 +16405,22 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt"></div>
 
 
+<div class="output_subarea output_text output_error">
+<pre>
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<span class="ansi-red-fg">NameError</span>Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-2-3eccc44a823e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> iris <span class="ansi-blue-fg">=</span> datasets<span class="ansi-blue-fg">.</span>load_iris<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> df = pd.DataFrame(data=np.c_[iris[&#39;data&#39;], iris[&#39;target&#39;]],
+</span><span class="ansi-green-intense-fg ansi-bold">      3</span>                  columns=iris[&#39;feature_names&#39;] + [&#39;Species&#39;])
+<span class="ansi-green-intense-fg ansi-bold">      4</span> df<span class="ansi-blue-fg">.</span>columns <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;TamSep&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;LrgSep&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;TamPet&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;LrgPet&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;Especies&#39;</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> X <span class="ansi-blue-fg">=</span> df<span class="ansi-blue-fg">.</span>iloc<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">:</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>values
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>TamSep</th>
-      <th>LrgSep</th>
-      <th>TamPet</th>
-      <th>LrgPet</th>
-      <th>Especies</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>5.1</td>
-      <td>3.5</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>4.9</td>
-      <td>3.0</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>4.7</td>
-      <td>3.2</td>
-      <td>1.3</td>
-      <td>0.2</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4.6</td>
-      <td>3.1</td>
-      <td>1.5</td>
-      <td>0.2</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5.0</td>
-      <td>3.6</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>0.0</td>
-    </tr>
-  </tbody>
-</table>
+<span class="ansi-red-fg">NameError</span>: name &#39;np&#39; is not defined</pre>
 </div>
-</div>
-
 </div>
 
 </div>
